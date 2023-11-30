@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script >
+    
+</script>
     <head>
         <meta charset="UTF-8">
         <title>D3.js</title>
-        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="./d3.v7.js"></script>
+       <!-- <script src="https://d3js.org/d3.v7.min.js"></script>-->
         <script src="app.js" defer></script>
     </head>
     <body>
-        <div></div>
+        <h1 id="j">hello</h1>
+        <button onclick="changeme()">ChangeMe</button>
+        <script >
+           
+            function changeme() {
+                console.log("Function is invoked")
+                let s = d3.select("#j")
+                console.log(s)
+                s.text("hi")
+            }
+          
+        </script>
     </body>
 </html>
